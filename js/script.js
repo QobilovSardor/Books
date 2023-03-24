@@ -90,3 +90,15 @@ try {
 } catch (error) {
 	console.log(error);
 }
+try {
+	// product settings
+	const openBtn = document.querySelector('#media-block__btn'),
+		productSettings = document.querySelector('#media-col');
+
+	openBtn.addEventListener('click', () => {
+		console.log(productSettings);
+		productSettings.classList.toggle('active-show__hide');
+	});
+} catch (error) {
+	console.log(error);
+}
