@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 	// $('input[name=phone]').mask('+7 (999) 999-99-99');
 
 	$('.menu-opener').on('click', function (e) {
@@ -59,11 +59,32 @@ try {
 }
 try {
 	var swiper = new Swiper(".mySwiper", {
-		slidesPerView: 3,
-		spaceBetween: 30,
+		spaceBetween: 20,
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
+		},
+		breakpoints: {
+			// 360: {
+			// 	slidesPerView: 1.5,
+			// 	spaceBetween: 16,
+			// },
+			576: {
+				slidesPerView: 1.3,
+				spaceBetween: 12,
+			},
+			768: {
+				slidesPerView: 1.6,
+				spaceBetween: 12,
+			},
+			992: {
+				slidesPerView: 1.9,
+				spaceBetween: 20,
+			},
+			1920: {
+				slidesPerView: 2.5,
+				spaceBetween: 20,
+			},
 		},
 	});
 } catch (error) {

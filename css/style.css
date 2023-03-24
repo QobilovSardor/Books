@@ -1156,9 +1156,83 @@ p {
 
 /* acordion end */
 
-/* carousel slider start */
+/* reviews carousel slider start */
+.reviews .swiper-slide {
+	position: relative;
+	background: #FFFFFF;
+	box-shadow: 1px 0px 27px -5px rgba(31, 26, 45, 0.22);
+	border-radius: 5px;
+	padding: 32px 23px 35px 23px;
+}
 
-/* carousel slider end */
+.reviews .swiper {
+	position: initial;
+}
+
+.reviews .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	bottom: -16px;
+}
+
+.swiper-pagination-bullet-active {
+	background: var(--black) !important;
+}
+
+.swiper-pagination-bullet {
+	border: 0.5px solid #110C1F;
+	opacity: 1;
+	background: transparent;
+}
+
+.reviews .swiper-slide::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 1px;
+	background: rgba(43, 34, 68, 0.09);
+	width: 62px;
+	height: 62px;
+	border-radius: 50%;
+}
+
+.reviews .slider-card__info {
+	max-width: 263px;
+}
+
+.reviews .slider-card__info span {
+	color: var(--gray);
+}
+
+.reviews .slider-card__info h3 {
+	color: var(--pink);
+}
+
+.reviews .slider-card__info p {
+	line-height: 14.82px;
+}
+
+.reviews .slider-card__img {
+	max-width: 114px;
+	text-align: center;
+}
+
+.reviews .slider-card__img .slider-card__picture {
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+}
+
+.reviews .slider-card__img h4 {
+	margin: 8px 0 27px;
+}
+
+.reviews .slider-card__img-icon {
+	margin: 8px 0 18px;
+}
+
+/* reviews carousel slider end */
 
 
 /* footer start */
@@ -1375,6 +1449,42 @@ p {
 	.main-sec .main-content .main-block {
 		max-width: 50%;
 	}
+.reviews .swiper-slide{
+	padding: 16px;
+}
+	.reviews .slider-card {
+		flex-direction: column;
+	}
+
+	.reviews .slider-card .slider-card__img-box {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		margin-top: 10px;
+	}
+
+	.reviews .slider-card__info {
+		max-width: 100%;
+	}
+
+	.reviews .slider-card__img {
+		max-width: 100%;
+	}
+
+	.reviews .slider-card__img h4 {
+		margin: 0;
+	}
+
+	.reviews .reviews-hide__text {
+		display: none !important;
+	}
+	.reviews .slider-card__img-icon{
+		justify-content: start !important;
+		gap: 24px;
+		}
+		.reviews .slider-card__img-icons a{
+			justify-content: start !important;
+		}
 }
 
 @media (max-width: 440px) {
