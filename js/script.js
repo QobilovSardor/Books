@@ -6,11 +6,13 @@ $(function () {
 		$(this).toggleClass('active');
 		$('.navbar').toggleClass('active');
 	});
+	
 	$('.catalog-btn').on('click', function (e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
 		$('.mymodal').toggleClass('modal-on');
 		$('.modal-wrap').toggleClass('active');
+		$('body').toggleClass('body_active');
 	});
 });
 try {
